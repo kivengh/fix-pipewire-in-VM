@@ -7,10 +7,9 @@ pacman -S pipewire wireplumber pipewire-pulse
 ```
 
 ```bash
-sudo mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
+mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
 ```
 
-3º
 ```bash
 vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
 ```
