@@ -2,21 +2,20 @@
  install & fix pipewire vmware workstation
 
 
-1º
-*need install* pipewire wireplumber pipewire-pulse
+```bash
+pacman -S pipewire wireplumber pipewire-pulse
+```
 
-
-2º
+```bash
 sudo mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
-
+```
 
 3º
-sudo nano ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
+```bash
+vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
+```
 
-
-
-4º paste
-
+```
 monitor.alsa.rules = [
   {
     matches = [
@@ -31,12 +30,12 @@ monitor.alsa.rules = [
     }
   }
 ]
+```
 
 
-
-5º
+```bash
 systemctl --user restart wireplumber pipewire pipewire-pulse
-
+```
 
 *need install*  
 in arch: pacman -S
