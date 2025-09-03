@@ -1,9 +1,14 @@
 # fix-pipewire-in-VM
  install & fix pipewire vmware workstation
 
-
+ArchLinux
 ```bash
 pacman -S pipewire wireplumber pipewire-pulse
+```
+
+Fedora
+```bash
+dnf install -y pipewire wireplumber pipewire-pulse
 ```
 
 ```bash
@@ -36,8 +41,3 @@ monitor.alsa.rules = [
 systemctl --user restart wireplumber pipewire pipewire-pulse
 ```
 
-*need install*  
-in arch: pacman -S
-in fedora: dnf install
-in debian: apt
-or your choice 
